@@ -7,7 +7,7 @@ public class ActivatedEnergyDrawWyvern : ActivatedAbilityBehaviour
 {
 	private const int ENERGY_COST = 2;
 
-	public const string RulebookName = "Screeching Call";
+	public const string RulebookName = "Materialize";
 
 	public static Ability ability;
 	public override Ability Ability => ability;
@@ -26,7 +26,7 @@ public partial class GrimoraPlugin
 {
 	public static void Add_Ability_ActivatedEnergyDrawWyvern()
 	{
-		const string rulebookDescription = "Pay 2 Energy for [creature] to summon a copy in your hand.";
+		const string rulebookDescription = "Pay 2 Souls for [creature] to summon a copy in your hand.";
 
 		AbilityBuilder<ActivatedEnergyDrawWyvern>.Builder
 		 .SetRulebookDescription(rulebookDescription)
